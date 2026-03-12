@@ -66,14 +66,18 @@ Now make sure you are still in the OneClick-macOS-Simple-KVM directory. The path
 /mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
 ```
 
-After that, download VNC Viewer [here](https://www.realvnc.com/en/connect/download/viewer/).
+After that, download VNC Viewer [here](https://www.realvnc.com/en/connect/download/viewer/), or use your own VNC client.
 
 Next, run the setup script:
 ```
 ./setup.sh
 ```
 
-Once you see a QEMU window pop up, press ctrl+c in the terminal and then run `sudo HEADLESS=1 ./basic.sh` in the terminal. This will start the VM in "headless" mode, which puts the output of the display onto a local port. Open VNC Viewer, and go to `localhost:5900` to connect to the VM using VNC.
+Once the setup is done, start the VM using this command:
+```
+sudo HEADLESS=1 ./basic.sh
+```
+This will start the VM in "headless" mode, which puts the output of the display onto a local port. Open VNC Viewer (or your own VNC client), and go to `localhost:5900` to connect to the VM using VNC.
 
 Whenever you want to load up the machine again, run `sudo HEADLESS=1 ./basic.sh`, NOT `./setup.sh` or `./basic.sh`.
 
