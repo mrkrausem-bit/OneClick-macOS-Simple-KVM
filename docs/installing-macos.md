@@ -26,7 +26,7 @@ After it reboots, you must continually select the "macOS Installer" entry in Ope
 Once you get to the setup screen, you will probably notice that it is very laggy, this is ok, as it will get much faster once you get through it. 
 
 #### A good way to make this experience better is by disabling transparency effects
-This can be done by selecting the "vision" section when you reach the accessibility setup screen. Once selected go through the different settings until reaching "Reduce Transparency", and turn it off. Reduce motion is recommended as well.
+This can be done by selecting the "vision" section when you reach the accessibility setup screen. Once selected go through the different settings until reaching "Reduce Transparency", and turn it on. Reduce motion is recommended as well.
 
 #### DO NOT LOG IN TO YOUR APPLE ID ON THE SETUP SCREEN
 This will blacklist your account and you will need to contact support. Before logging into any apple account you MUST follow [this guide](/docs/guide-Apple-ID)
