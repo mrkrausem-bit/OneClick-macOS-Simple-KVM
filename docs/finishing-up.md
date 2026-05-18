@@ -22,7 +22,7 @@ To make the VM run smoother and faster, look here: https://github.com/sickcodes/
 
 ## Troubleshooting
 
-If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` or the other way around.
+If the mouse is not aligned properly, edit the basic.sh file and change `-usb -device usb-kbd -device usb-tablet \` to `-usb -device usb-kbd -device usb-mouse \` and see if that helps.
 
 If you get an error that says access denied, run `sudo ./basic.sh` which will give it admin privelages.
 
