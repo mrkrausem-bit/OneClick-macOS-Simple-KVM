@@ -38,7 +38,12 @@ cd OneClick-macOS-Simple-KVM
 
 ## Step 3 (installing QEMU and more)
 
-First, install the `cpu-checker` package:
+If applicable, open the "WSL Settings" application on your computer.
+Make sure this setting is on:
+![image](https://github.com/user-attachments/assets/e6008734-d691-4708-8a57-3e6a3b56bf47)
+
+
+Next, install the `cpu-checker` package in the Ubuntu console:
 ```
 sudo apt install cpu-checker
 ```
