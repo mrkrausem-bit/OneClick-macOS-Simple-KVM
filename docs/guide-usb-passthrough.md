@@ -17,7 +17,9 @@ Bus 002 Device 003: ID 18d1:4e11 Google Inc. Nexus One
 ```
 (Note the Bus and device numbers).
 
-Now, add this line to the `args` section of `basic.sh`, replacing the `hostbus` and `hostaddr` with the values you got earlier
-```-usb -device usb-host,hostbus=2,hostaddr=3 \```
+Now, add this line to the `args` section of `basic.sh`, replacing the `hostbus` and `hostaddr` with the values you got earlier:
+```
+-usb -device usb-host,hostbus=2,hostaddr=3 \
+```
 
 Thats it! You should be good to go.

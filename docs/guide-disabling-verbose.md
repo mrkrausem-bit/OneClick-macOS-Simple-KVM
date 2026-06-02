@@ -21,7 +21,7 @@ Next, find and change this line
 <string>-v keepsyms=1 tlbto_us=0 vti=9</string>
 ```
 
-to this line
+to this line (removing the `-v`)
 
 ```
 <string>keepsyms=1 tlbto_us=0 vti=9</string>

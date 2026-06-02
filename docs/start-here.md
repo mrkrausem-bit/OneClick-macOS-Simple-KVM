@@ -15,7 +15,7 @@ New to macOS and KVM? Check [the FAQs.](docs/FAQs.md)
 
 #### 5/19/2022 - New website look! Hope you like it!
 
-#### 4/27/2022 - This repository used to be attached to [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM) as a fork, but do to a number of reasons I have decided to detach it. If this causes any problems, specifically in the git CLI, then feel free to post and issue and I will respond as soon as I can.
+#### 4/27/2022 - This repository used to be attached to [macOS-Simple-KVM](https://github.com/foxlet/macOS-Simple-KVM) as a fork, but do to a number of reasons I have decided to detach it.
 
 You must download or clone this GitHub repository before you begin
 Do not use forks of `notAperson535/OneClick-macOS-Simple-KVM` as I update this repository a lot, and forks are usually behind.

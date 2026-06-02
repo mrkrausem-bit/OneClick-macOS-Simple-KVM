@@ -25,7 +25,7 @@ Once that is done, pick a username and password inside the WSL terminal that pop
 ## Step 2 (Getting the files)
 Open a new Ubuntu terminal window, and run this command, replacing the WINDOWS_USER_NAME with your Windows username, not the Linux one.
 ```
-cd /mnt/c/users/WINDOWS_USER_NAME/Documents
+cd ~
 ```
 Now clone the repository
 ```
@@ -68,7 +68,7 @@ If that command returns `Y` or `1` (depending on CPU type), then you are good to
 
 Now make sure you are still in the OneClick-macOS-Simple-KVM directory. The path should look something like this:
 ```
-/mnt/c/users/WINDOWS_USER_NAME/Documents/OneClick-macOS-Simple-KVM
+~/OneClick-macOS-Simple-KVM
 ```
 
 After that, download VNC Viewer [here](https://www.realvnc.com/en/connect/download/viewer/), or use your own VNC client.

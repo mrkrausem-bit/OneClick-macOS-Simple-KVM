@@ -5,7 +5,7 @@ title: Manual Method
 You'll need a Linux system with `qemu` (3.1 or later), `python3`, `pip` and the KVM modules enabled. A Mac is **not** required. Some examples for different distributions:
 
 ```
-sudo apt-get install qemu-system qemu-utils python3 python3-pip  # for Ubuntu, Debian, Mint, and PopOS.
+sudo apt install qemu-system qemu-utils python3 python3-pip  # for Ubuntu, Debian, Mint, and PopOS.
 sudo pacman -Syu qemu-desktop python python-pip python-wheel --needed # for Arch and Manjaro.
 sudo xbps-install -Su qemu python3 python3-pip  # for Void Linux.
 sudo zypper in qemu-tools qemu-kvm qemu-x86 qemu-audio-pa python3-pip  # for openSUSE Tumbleweed
@@ -38,13 +38,12 @@ qemu-img convert RecoveryImage.dmg -O raw BaseSystem.img
 ```
 
 ## Bringing Your Own macOS bootable file
-If you want to bring your own bootable file, whether you already have a file or you have a custom version, drag it into the OneClick-macOS-Simple-KVM folder. Then, Check if it is named BaseSystem if it's not rename it to BaseSystem.
+If you want to bring your own bootable file, whether you already have a file or you have a custom version, drag it into the OneClick-macOS-Simple-KVM folder. If it is a dmg file, use this command to convert it into an img file, replacing FILENAME with your file's name.
+```
+qemu-img convert FILENAME.dmg -O raw BaseSystem.img
+```
 
-If the file is now named BaseSystem.dmg, you must run this command to convert it to BaseSystem.img
-```
-qemu-img convert BaseSystem.dmg -O raw BaseSystem.img
-```
-If it is already named BaseSystem.img, you are good to go
+If it is already an img file, rename it to BaseSystem.img.
 
 ## Step 2
 Create an empty hard disk using `qemu-img`, changing the name and size to preference:
@@ -65,7 +64,7 @@ sudo ./make.sh --add
 2. After running the above command, add `macOS.qcow2` as storage in the properties of the newly added entry for VM.
 
 ## Step 2b (Headless Systems)
-If you're running on a headless system (such as on Cloud providers), set the HEADLESS environment variable to 1:
+If you're running on a headless system (such as on Cloud providers), set the HEADLESS environment variable to 1 (The VM VNC will be accessible on port 5900):
 ```
 HEADLESS=1 ./basic.sh
 ```
