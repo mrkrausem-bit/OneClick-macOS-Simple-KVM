@@ -48,7 +48,7 @@ If it is already an img file, rename it to BaseSystem.img.
 ## Step 2
 Create an empty hard disk using `qemu-img`, changing the name and size to preference:
 ```
-qemu-img create -f qcow2 macOS.qcow2 64G
+qemu-img create -f qcow2 macOS.qcow2 100G
 ```
 
 if you change the drive name, change the line below according to the new name in `basic.sh`:
