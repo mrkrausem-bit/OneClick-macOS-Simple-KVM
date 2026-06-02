@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 
 sudo pacman -Syu qemu-desktop python python-pip python-wheel --needed --noconfirm
 
@@ -9,3 +10,7 @@ sudo pacman -Syu qemu-desktop python python-pip python-wheel --needed --noconfir
 (ls RecoveryImage.dmg >> /dev/null 2>&1 && mv RecoveryImage.dmg BaseSystem.dmg) || echo ""
 
 qemu-img convert BaseSystem.dmg -O raw BaseSystem.img
+
+(ls RecoveryImage.dmg >> /dev/null 2>&1 && rm RecoveryImage.dmg) || echo ""
+
+(ls BaseSystem.dmg >> /dev/null 2>&1 && rm BaseSystem.dmg) || echo ""
